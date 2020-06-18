@@ -35,5 +35,33 @@
   </div>
 </div>
 
+<?php
+  require_once './connect.php';
+  if($conn->connect_errno){
+    $_SESSION['error'] = 'Awaria bazy danych!';
+    exit();
+  }
+
+  $sql = "SELECT  id, name, price, image FROM `produkty`";
+  $stmt = $conn->prepare($sql);
+  //$stmt->bind_param('s', $name);
+  //$stmt->bind_param('i', $id);
+  $stmt->bind_result($id, $name, $price, $image);
+  //$stmt->bind_param("d", $price);
+  $stmt->execute();
+  //$stmt->bind_result($district);
+  $stmt->fetch();
+  echo  "<br>", $id, " ", $name," ", $price;
+  //header("Content-type: image/png");
+  echo '<img src="data:image/jpeg;base64,'.base64_encode( $image ).'"/>';
+  //$num = mysql_numrows($stmt);
+  //echo mysql_resut($stmt, 1, 1);
+  if($conn->affected_rows){
+    $_SESSION['error'] = 'Podanu adres email istnieje w bazie dancyh';
+  }
+  $stmt->close();
+  $conn->close();
+?>
+
 </body>
 </html>
