@@ -1,8 +1,43 @@
+/* div przycisku zaloguj/wyloguj i gówrny div przy logowaniu/rejestracji */
 .card{
     background-color: rgb(67, 204, 67);
     float: right;
 }
-img{
-    height: 200px;
-    width: 200px;;
+
+/* zdjecia */
+#img1{
+    height: auto;
+    width: 5%;;
+}
+
+/* napis/logo */ 
+.logo{
+    text-align: center;
+}
+
+/* text ze strony warunki + komunikaty o błędach - można by je oddzielić i  inaczej sformatować */
+h3{
+    font-style: italic;
+    font-size: large;
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+
+/* div rejestracji */
+.register-box{
+    background-color: rgb(67, 204, 67);
+    margin: auto;
+    width: 15%;
+    padding: 10px;
+    text-align: center;
+}
+
+/* div logowania */
+.login-box{
+    background-color: rgb(67, 204, 67);
+    margin: auto;
+    width: 15%;
+    padding: 10px;
+    text-align: center;
 }
