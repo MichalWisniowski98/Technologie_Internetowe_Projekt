@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,17 +23,21 @@
             <div class="card-body login-card-body">
                 <p class="login-box-msg">Podaj email</p>
                 
-                <!-- Odzyskiwanie hasła - okno do wpisania maila - trzeba zrobić wyświetlanie informacji o wysłamniu maila z linkiem do resetu  -->
-                <form action="../login_page.php" method="post">
+                <!-- Odzyskiwanie hasła - okno do wpisania maila -->
+                <form action="javascript:history.back()" method="post">
                     <div class="input-group mb-3">
-                        <input type="email" class="form-control" placeholder="Email" name="email">
+                        <input required type="email" class="form-control" placeholder="Email" name="email">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-envelope"></span>
                             </div>
                         </div>
                         <!-- /.col -->
+                        <!-- Komunikat o wysłaniu maila - reset -->
                         <div class="col-4">
+                            <?php
+                                $_SESSION['error'] = 'Link do zmiany hasła został wysłany na podany email';  
+                            ?>
                             <button type="submit" class="btn btn-primary btn-block">Reset</button>
                         </div>
                         <!-- /.col -->

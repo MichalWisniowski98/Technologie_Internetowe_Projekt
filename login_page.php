@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +31,7 @@
       SUCCESS;
       }*/
 
-      //wyświetlanie błędów zwróconych ze skryptu login.php - nie działa
+      //wyświetlanie błędów zwróconych ze skryptu login.php
       if(isset($_SESSION['error'])){
       echo<<<ERROR
         <div class="card card-outline card-danger">

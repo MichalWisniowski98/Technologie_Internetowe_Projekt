@@ -1,8 +1,10 @@
+<!-- Strona do wyrzucenia - tylko do testów -->
+
 <?php
   session_start();
-  //blokada przed wejściem na strone bez uprawnień
-  if($_SESSION['logged']['permission'] != 1){
-      header('location: ../scripts/login.php');
+  //blokada przed wejściem na strone bez uprawnień - można wywalić
+  if(isset($_SESSION['logged']['email'])){
+    //header('location: ./scripts/login.php');
   }
 ?>
 <!DOCTYPE html>
@@ -20,20 +22,14 @@
   <div class="home-box">
     <div class="logo">
       <!-- Interaktywny przycisk logo sklepu -->
-      <a href="./admin.php"><b>Gamer </b>Shop</a>
+      <a href="../"><b>Gamer </b>Shop</a>
     </div>
-    <?php
-        //Wyświetlanie nazwy użytkownika - tu by trzeba było dać jakiś div żeby było oddzielone od reszty strony
-        echo "Jesteś zalogowany jako ", $_SESSION['logged']['name'], " (Admin)";
-    ?>
+    <!--Wyświetlanie nazwy użytkownika - tu by trzeba było dać jakiś div żeby było oddzielone od reszty strony-->
+    Jesteś zalogowany jako: Gość
     <div class="card">
-        <!-- Przycisk Wyloguj -->
-        <a href="../scripts/logout.php" class="text-center">Wyloguj</a>
+      <!-- Przycisk Zaloguj -->
+      <a href="../login_page.php" class="text-center">Login</a>
     </div>
-    <!-- Przycisk koszyka -->
-    <form action="../pages/cart.php" method="post">
-      <input type='submit' name='product' value='Koszyk'>
-    </form>
   </div>
 
   <?php
@@ -53,27 +49,31 @@
     //header("Content-type: image/png");
     $tab_name = explode(" ", $name);
 
-    //pętla do wyświetlenia tego samego produktu 9x / dodawanie do koszyka - trzeba to wpakować w jakieś divy
+    //pętla do wyświetlenia tego samego produktu 9x - trzeba to wpakować w jakieś divy
     echo  '<form action="" method="post">';
-      $num=0;
-      for($ci=0; $ci<3; $ci++){
-        for($c=0; $c<3; $c++){
-          echo "<br>";
-          echo '<img id="img1" src="data:image/jpeg;base64,'.base64_encode( $image ).'"/>';
-          echo  " ", $num, " ", $id, " ", $name, " ", $price, " ";
-          echo "<input type='submit' name='product' value='$tab_name[0], $num'";
-          $num++;
-        }
+    $num=0;
+    for($ci=0; $ci<3; $ci++){
+      for($c=0; $c<3; $c++){
         echo "<br>";
+        echo '<img id="img1" src="data:image/jpeg;base64,'.base64_encode( $image ).'"/>';
+        echo  " ", $num, " ", $id, " ", $name, " ", $price, " ";
+        echo "<input type='submit' name='product' value='$tab_name[0], $num'";
+        $num++;
       }
+      echo "<br>";
+    }
     echo "</form>";
-
-    //zapisanie dodanego produktu w zmiennej sesyjnej
     if(isset($_POST['product'])){
       $product = $_POST['product'];
       if(!isset($_SESSION['product'][$product])) $_SESSION['product'][$product] = 1;
       else $_SESSION['product'][$product]++;
     }
+
+    echo '<form action="./koszyk.php" method="post">';
+    echo "<input type='submit' name='product' value='Koszyk'>";
+    echo '</form>';
+
+    
 
 
     //zamknięcie połączenia z bazą

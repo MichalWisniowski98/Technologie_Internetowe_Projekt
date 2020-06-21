@@ -58,8 +58,9 @@
             $conn->close();
             $stmt->close();
             //header('location: ../login_page.php/?register=success');
-            header('location: ../login_page.php');
-            exit();
+            //header('location: ../login_page.php');
+            //exit();
+            $_SESSION['error'] = 'Rejestracja zakończona powodzeniem';
         }
 
         //sprawdzenie czy istnieje w bazie danych email podany przez użytkowanika
