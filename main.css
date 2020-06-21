@@ -1,6 +1,6 @@
 /* div przycisku zaloguj/wyloguj i gówrny div przy logowaniu/rejestracji */
 .card{
-    background-color: rgb(67, 204, 67);
+    background-color: #ffff22;
     float: right;
 }
 
@@ -26,7 +26,7 @@ h3{
 
 /* div rejestracji */
 .register-box{
-    background-color: rgb(67, 204, 67);
+    background-color:#191919;
     margin: auto;
     width: 15%;
     padding: 10px;
@@ -35,7 +35,7 @@ h3{
 
 /* div logowania */
 .login-box{
-    background-color: rgb(67, 204, 67);
+    background-color: #191919;
     margin: auto;
     width: 15%;
     padding: 10px;
