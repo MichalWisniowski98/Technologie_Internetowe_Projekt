@@ -1,6 +1,11 @@
 /* div przycisku zaloguj/wyloguj i gówrny div przy logowaniu/rejestracji */
+<<<<<<< HEAD
 *{
     font-family: tahoma;
+=======
+.login_button{
+    background-color: rgb(67, 204, 67);
+>>>>>>> c2dd40e528fab2792a6fb128ca7b0604b0014589
 }
 
 a{
@@ -92,7 +97,7 @@ h3{
 
 /* div rejestracji */
 .register-box{
-    background-color: rgb(67, 204, 67);
+    background-color:#191919;
     margin: auto;
     width: 15%;
     padding: 10px;
@@ -101,9 +106,40 @@ h3{
 
 /* div logowania */
 .login-box{
-    background-color: rgb(0, 204, 255);
+    font-family: Helvetica;
+    color: white;
+    background-color: #191919;
     margin: auto;
-    width: 15%;
+    margin-top: 150px;
+    width: 20%;
     padding: 10px;
     text-align: center;
+    border-radius: 5%;
+    box-shadow: 7px 7px  #888888;
 }
+
+.logo-button  img{
+    margin: 30px;
+    max-width: 60%;
+    max-height: 60%;
+}
+
+.mb-1{
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+
+.mb-0{
+    margin-top: 5px;
+}
+
+
+.mb-1 > a{
+    text-decoration: underline;
+    color: white;
+}
+.mb-0 > a{
+    text-decoration: underline;
+    color: white;
+}
+

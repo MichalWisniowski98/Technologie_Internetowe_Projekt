@@ -14,9 +14,10 @@
 </head>
 <body class="hold-transition login-page">
   <div class="login-box">
-    <div class="login-logo">
+
+    <div class="logo-button">
       <!-- Interaktywny przycisk logo sklepu -->
-      <a href="./"><b>Gamer </b>Shop</a>
+      <a href="./"><img src="logo.png" alt="FutureDesk"></a>
     </div>
 
     <?php
@@ -44,7 +45,6 @@
       }
     ?>
     <!-- /.login-logo -->
-    <div class="card">
       <div class="card-body login-card-body">
         <p class="login-box-msg">Zaloguj się by przejść do koszyka</p>
 
@@ -94,7 +94,6 @@
         </p>
       </div>
       <!-- /.login-card-body -->
-    </div>
   </div>
   <!-- /.login-box -->
 
