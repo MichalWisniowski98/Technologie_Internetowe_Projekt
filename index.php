@@ -17,17 +17,21 @@
   <link rel="stylesheet" href="./main.css">
 </head>
 <body class="hold-transition register-page">
+
   <div class="home-box">
-    <div class="logo">
-      <!-- Interaktywny przycisk logo sklepu -->
-      <a href="./index.php"><b>Gamer </b>Shop</a>
-    </div>
+    <header>
+      
+      <a href="./index.php">
+        <img class="logo" src="./logo.png" alt="" width="30%">
+      </a>
+      <a href="./login_page.php">
+        <div class="login_button">Zaloguj
+        </div>
+      </a>
+    
+    </header>
     <!--Wyświetlanie nazwy użytkownika - tu by trzeba było dać jakiś div żeby było oddzielone od reszty strony-->
-    Jesteś zalogowany jako: Gość
-    <div class="card">
-      <!-- Przycisk Zaloguj -->
-      <a href="./login_page.php" class="text-center">Login</a>
-    </div>
+
     <!-- Przycisk koszyka -->
     <form action="./pages/cart.php" method="post">
       <input type='submit' name='product' value='Koszyk'>
