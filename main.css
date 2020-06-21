@@ -1,36 +1,26 @@
 /* div przycisku zaloguj/wyloguj i gówrny div przy logowaniu/rejestracji */
-.login_button{
-    background-color: rgb(67, 204, 67);
-    
-    
+*{
+    font-family: tahoma;
 }
 
-/* zdjecia */
-#img1{
-    height: auto;
-    width: 5%;
+a{
+    text-decoration: none;
 }
-
-/* napis/logo */ 
 body{
     margin: 0px;
     padding: 0px;
 }
 header{
-    
     height: 10vh;
-    width: 100vw;
     background-color: #191919;
-    position: fixed;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
-
-}
-.logo{
+    padding-left: 7%;
+    padding-right: 3%;
     
 }
-/* text ze strony warunki + komunikaty o błędach - można by je oddzielić i  inaczej sformatować */
+
 h3{
     font-style: italic;
     font-size: large;
@@ -38,6 +28,67 @@ h3{
     position: relative;
     top: 50%;
 }
+.kup{
+    border-radius: 50px;
+    border: none;
+    background-color: red;
+    padding: 3px 20px;
+    color: white;
+    cursor: pointer;
+    font-family: 'MuseoModerno';
+
+}
+.content{
+    display: flex;
+    justify-content: center;
+}
+.koszyk{
+    border-radius: 50px;
+    border: none;
+
+    color: white;
+    background-color: #191919;
+    margin-right: 20px;
+    cursor: pointer;
+    font-family: 'MuseoModerno';
+}
+.logo{
+    margin-right: auto;
+    color: white;
+    font-size: 30px;
+    border-radius: 50px;
+    border: blue 2px;
+    cursor: pointer;
+    font-family: 'MuseoModerno';
+    letter-spacing: 0.10em;
+}
+.zaloguj{
+    border-radius: 50px;
+    border: none;
+    background-color: blue;
+    padding: 3px 20px;
+    color: white;
+    margin-left: 15px;
+    cursor: pointer;
+
+    font-family: 'MuseoModerno';
+}
+.zarejestruj{
+    border-radius: 50px;
+    border: none;
+    background-color: red;
+    padding: 3px 20px;
+    color: white;
+    margin-left: 15px;
+    cursor: pointer;
+    font-family: 'MuseoModerno';
+}
+#img1{
+    width: 25%;
+}
+
+/* text ze strony warunki + komunikaty o błędach - można by je oddzielić i  inaczej sformatować */
+
 
 /* div rejestracji */
 .register-box{
