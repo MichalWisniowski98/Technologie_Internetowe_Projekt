@@ -1,12 +1,4 @@
 /* div przycisku zaloguj/wyloguj i gówrny div przy logowaniu/rejestracji */
-<<<<<<< HEAD
-*{
-    font-family: tahoma;
-=======
-.login_button{
-    background-color: rgb(67, 204, 67);
->>>>>>> c2dd40e528fab2792a6fb128ca7b0604b0014589
-}
 
 a{
     text-decoration: none;
