@@ -48,9 +48,40 @@ h3{
 
 /* div logowania */
 .login-box{
-    background-color:;
+    font-family: Helvetica;
+    color: white;
+    background-color: #191919;
     margin: auto;
-    width: 15%;
+    margin-top: 150px;
+    width: 20%;
     padding: 10px;
     text-align: center;
+    border-radius: 5%;
+    box-shadow: 7px 7px  #888888;
 }
+
+.logo-button  img{
+    margin: 30px;
+    max-width: 60%;
+    max-height: 60%;
+}
+
+.mb-1{
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+
+.mb-0{
+    margin-top: 5px;
+}
+
+
+.mb-1 > a{
+    text-decoration: underline;
+    color: white;
+}
+.mb-0 > a{
+    text-decoration: underline;
+    color: white;
+}
+

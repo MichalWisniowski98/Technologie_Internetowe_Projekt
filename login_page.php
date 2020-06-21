@@ -14,8 +14,11 @@
 </head>
 <body class="hold-transition login-page">
   <div class="login-box">
+
+    <div class="logo-button">
       <!-- Interaktywny przycisk logo sklepu -->
-      <a href="./"><b>Gamer </b>Shop</a>
+      <a href="./"><img src="logo.png" alt="FutureDesk"></a>
+    </div>
 
     <?php
     //do wyjebania?
