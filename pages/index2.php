@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="../main.css">
 </head>
 <body class="hold-transition register-page">
+
   <div class="home-box">
     <div class="logo">
       <!-- Interaktywny przycisk logo sklepu -->
