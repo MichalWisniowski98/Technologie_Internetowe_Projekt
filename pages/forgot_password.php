@@ -15,7 +15,7 @@
 </head>
 <body class="hold-transition login-page">
     <div class="login-box">
-    <a class="logo" href="./index.php">FutureDesk</a>
+    <a class="logo" href="../index.php">FutureDesk</a>
 
         <!-- /.login-logo -->
         <div class="card">
