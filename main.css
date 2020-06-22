@@ -27,6 +27,7 @@ h3{
     top: 50%;
 }
 .kup{
+    display: flex;
     border-radius: 50px;
     border: none;
     background-color: red;
@@ -34,9 +35,11 @@ h3{
     color: white;
     cursor: pointer;
     font-family: 'MuseoModerno';
+}
+.produkty{
+    padding: 100px;
 
 }
-
 .koszyk{
     border: none;
     color: white;
@@ -79,6 +82,7 @@ h3{
 }
 #img1{
     width: 25%;
+    margin-left: 35%;
 }
 
 /* text ze strony warunki + komunikaty o błędach - można by je oddzielić i  inaczej sformatować */
