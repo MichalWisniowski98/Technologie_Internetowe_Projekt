@@ -43,23 +43,27 @@
         $stmt->fetch();
         //header("Content-type: image/png");
         $tab_name = explode(" ", $name);
-
-        //pętla do wyświetlenia tego samego produktu 9x / dodawanie do koszyka - trzeba to wpakować w jakieś divy
-        echo  '<form action="" class = "produkt" method="post">';
+        ?>
+        
+        <div>
+        <?php
+        echo  '<form action="" class = "produkty" method="post">';
           $num=0;
           for($ci=0; $ci<4; $ci++){
-            for($c=0; $c<2; $c++){
+            for($c=0; $c<5; $c++){
               echo "<br>";
               echo '<img id="img1" src="data:image/jpeg;base64,'.base64_encode( $image ).'"/>';
-
-              echo  " ", $name, " ", $price, " zł";
-
-              echo "<input  type='submit' class = 'kup' name='product' value='KUP'";
+              ?><div class = "user"><?php echo  " ", $name, " ", $price, " zł";?></div>
+              <?php
+              echo "<input type='submit' class = 'kup' name='product' value='KUP'";
               $num++;
+              echo "<br>";
             }
-            echo "<br>";
           }
-          
+        ?>
+        </div>
+
+          <?php
         //zapisanie dodanego produktu w zmiennej sesyjnej
         echo "</form>";
         if(isset($_POST['product'])){

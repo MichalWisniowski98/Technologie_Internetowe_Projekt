@@ -27,6 +27,7 @@ h3{
     top: 50%;
 }
 .kup{
+    display: flex;
     border-radius: 50px;
     border: none;
     background-color: red;
@@ -34,9 +35,11 @@ h3{
     color: white;
     cursor: pointer;
     font-family: 'MuseoModerno';
+}
+.produkty{
+    padding: 100px;
 
 }
-
 .koszyk{
     border: none;
     color: white;
@@ -55,6 +58,7 @@ h3{
     cursor: pointer;
     font-family: 'MuseoModerno';
     letter-spacing: 0.10em;
+
 }
 .zaloguj{
     border-radius: 50px;
@@ -79,6 +83,7 @@ h3{
 }
 #img1{
     width: 25%;
+    margin-left: 35%;
 }
 
 /* forgot_password */
