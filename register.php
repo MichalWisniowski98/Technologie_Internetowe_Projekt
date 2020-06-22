@@ -8,13 +8,14 @@
   <title>Gamer Shop | Registration Page</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=MuseoModerno:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./main.css">
 </head>
 <body class="hold-transition register-page">
   <div class="register-box">
     <div class="register-logo">
       <!-- Interaktywny przycisk logo sklepu -->
-      <a href="./"><b>Gamer </b>Shop</a>
+      <a href="./" class="logo">FutureDesk</a>
     </div>
 
 
@@ -34,7 +35,8 @@
 
     <div class="card-register">
       <div class="register-card-body">
-        <p class="login-box-msg">Register a new membership</p>
+
+        <p class="login-box-msg">Zarejestruj się</p>
 
         <!-- Formularz rejestracji - Imie, Nazwisko, 2x email, 2x hasło, przycisk z warunkami rejestracji  -->
         <form action="./scripts/add_user.php" method="post">
@@ -63,7 +65,7 @@
             </div>
           </div>
           <div class="input-group mb-3">
-            <input type="email" class="form-control" placeholder="Retype Email" name="email2">
+            <input type="email" class="form-control" placeholder="Powtórz Email" name="email2">
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-envelope"></span>
@@ -71,7 +73,7 @@
             </div>
           </div>
           <div class="input-group mb-3">
-            <input type="password" class="form-control" placeholder="Password" name="pass1">
+            <input type="password" class="form-control" placeholder="Hasło" name="pass1">
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-lock"></span>
@@ -79,7 +81,7 @@
             </div>
           </div>
           <div class="input-group mb-3">
-            <input type="password" class="form-control" placeholder="Retype password" name="pass2">
+            <input type="password" class="form-control" placeholder="Powtórz hasło" name="pass2">
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-lock"></span>
@@ -91,13 +93,13 @@
               <div class="icheck-primary">
                 <input type="checkbox" id="agreeTerms" name="terms" value="agree">
                 <label for="agreeTerms">
-                I agree to the <a href="./terms.html">terms</a>
+                Akceptuję warunki <a href="./terms.html">regulaminu</a>
                 </label>
               </div>
             </div>
             <!-- /.col -->
             <div class="col-4">
-              <button type="submit" class="btn btn-primary btn-block">Register</button>
+              <button type="submit" class="btn btn-primary btn-block">Zarejestruj</button>
             </div>
             <!-- /.col -->
           </div>
@@ -105,7 +107,9 @@
 
         
         <!-- Link - "już mam konto" -->
-        <a href="./login_page.php" class="text-center">I already have a membership</a>
+        <div class="gotaccount">
+          <a href="./login_page.php" class="text-center">Mam już konto</a>
+        </div>
       </div>
       <!-- /.form-box -->
     </div><!-- /.card -->
