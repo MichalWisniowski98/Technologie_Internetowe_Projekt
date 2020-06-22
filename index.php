@@ -53,7 +53,7 @@
             for($c=0; $c<5; $c++){
               echo "<br>";
               echo '<img id="img1" src="data:image/jpeg;base64,'.base64_encode( $image ).'"/>';
-              ?><div class = "user"><?php echo  " ", $name, " ", $price, " zł";?></div>
+              ?><div class = "opis"><?php echo  " ", $name, " ", $price, " zł";?></div>
               <?php
               echo "<input type='submit' class = 'kup' name='product' value='KUP'";
               $num++;
