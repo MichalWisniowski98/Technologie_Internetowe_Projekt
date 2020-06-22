@@ -72,16 +72,16 @@ h3{
 }
 
 .mb-0{
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
 
 .mb-1 > a{
-    text-decoration: underline;
+    text-decoration: none;
     color: white;
 }
 .mb-0 > a{
-    text-decoration: underline;
+    text-decoration: none;
     color: white;
 }
 
