@@ -1,34 +1,24 @@
-/* div przycisku zaloguj/wyloguj i gówrny div przy logowaniu/rejestracji */
-.login_button{
-    background-color: rgb(67, 204, 67);
+a{
+    text-decoration: none;
 }
-
-/* zdjecia */
-#img1{
-    height: auto;
-    width: 5%;
-}
-
-/* napis/logo */ 
 body{
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
+    background-color: darkgreen;
+    
 }
 header{
-    
+    position: sticky;
     height: 10vh;
-    width: 100vw;
     background-color: #191919;
-    position: fixed;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
+    padding-left: 7%;
+    padding-right: 3%;
+}
 
-}
-.logo{
-    
-}
-/* text ze strony warunki + komunikaty o błędach - można by je oddzielić i  inaczej sformatować */
 h3{
     font-style: italic;
     font-size: large;
@@ -36,6 +26,66 @@ h3{
     position: relative;
     top: 50%;
 }
+.kup{
+    border-radius: 50px;
+    border: none;
+    background-color: red;
+    padding: 3px 20px;
+    color: white;
+    cursor: pointer;
+    font-family: 'MuseoModerno';
+
+}
+.content{
+    display: flex;
+    justify-content: center;
+}
+.koszyk{
+    border: none;
+    color: white;
+    background-color: #191919;
+    margin-right: 100px;
+    cursor: pointer;
+    font-family: 'MuseoModerno';
+    font-size: 16px;
+}
+.logo{
+    margin-right: auto;
+    color: white;
+    font-size: 30px;
+    border-radius: 50px;
+    border: blue 2px;
+    cursor: pointer;
+    font-family: 'MuseoModerno';
+    letter-spacing: 0.10em;
+}
+.zaloguj{
+    border-radius: 50px;
+    border: none;
+    background-color: blue;
+    padding: 3px 20px;
+    color: white;
+    margin-left: 15px;
+    cursor: pointer;
+
+    font-family: 'MuseoModerno';
+}
+.zarejestruj{
+    border-radius: 50px;
+    border: none;
+    background-color: red;
+    padding: 3px 20px;
+    color: white;
+    margin-left: 15px;
+    cursor: pointer;
+    font-family: 'MuseoModerno';
+}
+#img1{
+    width: 25%;
+}
+
+/* text ze strony warunki + komunikaty o błędach - można by je oddzielić i  inaczej sformatować */
+
 
 /* div rejestracji */
 .register-box{
@@ -53,35 +103,50 @@ h3{
     background-color: #191919;
     margin: auto;
     margin-top: 150px;
-    width: 20%;
+    width: 30%;
     padding: 10px;
     text-align: center;
     border-radius: 5%;
-    box-shadow: 7px 7px  #888888;
-}
 
-.logo-button  img{
-    margin: 30px;
-    max-width: 60%;
-    max-height: 60%;
 }
-
+.user{
+    font-family: 'MuseoModerno';
+    color: white;
+}
 .mb-1{
-    margin-top: 80px;
-    margin-bottom: 0px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .mb-0{
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 
 .mb-1 > a{
     text-decoration: none;
-    color: white;
+    color: darkblue;
 }
 .mb-0 > a{
     text-decoration: none;
+    color: darkblue;
+}
+.mb-3{
+    margin-top: 10px;
+    border-radius: 50px;
+    border: none;
+    padding: 3px 30px;
+}
+.btn.btn-primary.btn-block{
+    margin-top: 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: blue;
+    padding: 3px 30px;
     color: white;
+    cursor: pointer;
+    font-size: large;
+
+    font-family: 'MuseoModerno';
 }
 
