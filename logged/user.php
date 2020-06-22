@@ -8,6 +8,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=MuseoModerno:wght@300&display=swap" rel="stylesheet">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Gamer Shop | Home</title>
@@ -18,22 +20,19 @@
 </head>
 <body class="hold-transition register-page">
   <div class="home-box">
-    <div class="logo">
-      <!-- Interaktywny przycisk logo sklepu -->
-      <a href="./user.php"><b>Gamer </b>Shop</a>
-    </div>
-    <?php
+    <header>
+      <a class="logo" href="./index.php">FutureDesk</a>
+      <!-- Przycisk koszyka -->
+      <form action="../pages/cart.php" method="post">
+        <input type='submit' class="koszyk" name='product' value='Koszyk'>       
+      </form>
+      <?php
         //Wyświetlanie nazwy użytkownika - tu by trzeba było dać jakiś div żeby było oddzielone od reszty strony
-        echo "Jesteś zalogowany jako ", $_SESSION['logged']['name'];
-    ?>
-    <div class="card">
-        <!-- Przycisk Wyloguj -->
-        <a href="../scripts/logout.php" class="text-center">Wyloguj</a>
-    </div>
-    <!-- Przycisk koszyka -->
-    <form action="../pages/cart.php" method="post">
-      <input type='submit' name='product' value='Koszyk'>
-    </form>
+        echo "<div class = 'user' >Witaj:  </div>", $_SESSION['logged']['name'];
+      ?>
+      <a href="../scripts/logout.php"><button class = "zarejestruj">Wyloguj</button></a>
+    </header>
+
   </div>
 
   <?php
