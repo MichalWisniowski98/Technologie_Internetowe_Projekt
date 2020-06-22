@@ -1,13 +1,13 @@
-/* div przycisku zaloguj/wyloguj i gówrny div przy logowaniu/rejestracji */
-
 a{
     text-decoration: none;
 }
 body{
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
 }
 header{
+    position: sticky;
     height: 10vh;
     background-color: #191919;
     display: flex;
@@ -15,7 +15,6 @@ header{
     align-items: center;
     padding-left: 7%;
     padding-right: 3%;
-    
 }
 
 h3{
@@ -35,14 +34,17 @@ h3{
     font-family: 'MuseoModerno';
 
 }
+.produkt{
+    background-color: brown;
+}
 .content{
     display: flex;
     justify-content: center;
+    background-color: brown;
 }
 .koszyk{
     border-radius: 50px;
     border: none;
-
     color: white;
     background-color: #191919;
     margin-right: 20px;
@@ -109,6 +111,7 @@ h3{
     border-radius: 5%;
     box-shadow: 7px 7px  #888888;
 }
+
 
 .logo-button  img{
     margin: 30px;

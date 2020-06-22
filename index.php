@@ -19,7 +19,6 @@
 </head>
 <body class="hold-transition register-page">
     <header>
-      
       <a class="logo" href="./index.php">FutureDesk</a>
       <form action="./pages/cart.php" method="post">
         <input type='submit' class="koszyk" name='product' value='Koszyk'>
@@ -46,7 +45,7 @@
         $tab_name = explode(" ", $name);
 
         //pętla do wyświetlenia tego samego produktu 9x / dodawanie do koszyka - trzeba to wpakować w jakieś divy
-        echo  '<form action="" method="post">';
+        echo  '<form action="" class = "produkt" method="post">';
           $num=0;
           for($ci=0; $ci<4; $ci++){
             for($c=0; $c<2; $c++){
