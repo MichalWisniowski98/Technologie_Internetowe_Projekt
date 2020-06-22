@@ -13,11 +13,10 @@
 </head>
 <body class="hold-transition register-page">
   <div class="register-box">
-    <div class="register-logo">
+
       <!-- Interaktywny przycisk logo sklepu -->
       <a href="./" class="logo">FutureDesk</a>
-    </div>
-
+ 
 
     <?php
       //wyświetlanie błędów zwróconych ze skryptu add_user.php
