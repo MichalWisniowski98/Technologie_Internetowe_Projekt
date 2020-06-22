@@ -15,7 +15,7 @@
 </head>
 <body class="hold-transition login-page">
     <div class="login-box">
-    <a class="logo" href="./index.php">FutureDesk</a>
+    <a class="logo" href="../index.php">FutureDesk</a>
 
         <!-- /.login-logo -->
         <div class="card">
@@ -25,10 +25,11 @@
                 <!-- Odzyskiwanie hasła - okno do wpisania maila -->
                 <form action="javascript:history.back()" method="post">
                     <div class="input-group mb-3">
-                        <input required type="email" class="form-control" placeholder="Email" name="email">
+                            <input required type="email" class="form-control" placeholder="Email" name="email">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-envelope"></span>
+                                </div>
                             </div>
                         </div>
                         <!-- /.col -->
@@ -38,9 +39,10 @@
                                 $_SESSION['error'] = 'Link do zmiany hasła został wysłany na podany email';  
                             ?>
                             <button type="submit" class="btn btn-primary btn-block">Reset</button>
+                        
                         </div>
                         <!-- /.col -->
-                    </div>
+            
                 </form>
             </div>
         </div>
