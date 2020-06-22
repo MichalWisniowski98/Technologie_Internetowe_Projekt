@@ -47,7 +47,7 @@
     ?>
     <!-- /.login-logo -->
       <div class="card-body login-card-body">
-        <p class="login-box-msg">Zaloguj się by przejść do koszyka</p>
+          <p class="login-box-msg">Zaloguj się by przejść do koszyka</p>
 
         <!-- Formularz logowania - email i hasło - brakuje przycisku "zapamiętaj mnie" - sprawdzić czy da się to ogarnąć -->
         <form action="./scripts/login.php" method="post">
@@ -60,7 +60,7 @@
             </div>
           </div>
           <div class="input-group mb-3">
-            <input type="password" class="form-control" placeholder="Password" name="pass">
+            <input type="password" class="form-control" placeholder="Hasło" name="pass">
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-lock"></span>
@@ -80,7 +80,7 @@
             -->
             <!-- /.col -->
             <div class="col-4">
-              <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+              <button type="submit" class="btn btn-primary btn-block">Zaloguj</button>
             </div>
             <!-- /.col -->
           </div>
