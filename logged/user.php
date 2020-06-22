@@ -26,10 +26,8 @@
       <form action="../pages/cart.php" method="post">
         <input type='submit' class="koszyk" name='product' value='Koszyk'>       
       </form>
-      <?php
-        //Wyświetlanie nazwy użytkownika - tu by trzeba było dać jakiś div żeby było oddzielone od reszty strony
-        echo "<div class = 'user' >Witaj:  </div>", $_SESSION['logged']['name'];
-      ?>
+      <div class = "user">Witaj : <?php echo $_SESSION['logged']['name']; ?></div>
+      
       <a href="../scripts/logout.php"><button class = "zarejestruj">Wyloguj</button></a>
     </header>
 

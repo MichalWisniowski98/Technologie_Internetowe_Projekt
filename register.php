@@ -37,7 +37,7 @@
         <p class="login-box-msg">Register a new membership</p>
 
         <!-- Formularz rejestracji - Imie, Nazwisko, 2x email, 2x hasło, przycisk z warunkami rejestracji  -->
-        <form action="../scripts/add_user.php" method="post">
+        <form action="./scripts/add_user.php" method="post">
           <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Imie" name="name">
             <div class="input-group-append">

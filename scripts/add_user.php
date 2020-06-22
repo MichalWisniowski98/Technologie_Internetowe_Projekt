@@ -58,7 +58,7 @@
             $conn->close();
             $stmt->close();
             //header('location: ../login_page.php/?register=success');
-            //header('location: ../login_page.php');
+            header('location: ../login_page.php');
             //exit();
             $_SESSION['error'] = 'Rejestracja zakończona powodzeniem';
         }
@@ -84,11 +84,11 @@
         $stmt->close();
         
         //powrót do poprzedniej strony
-        ?>
+        /*?>
             <script>
                 history.back();
             </script>
-        <?php
+        <?php*/
 
     }
     //powrót do porzedniej strony i wyświetlnie błedu o nieuzupełnionym formularzu

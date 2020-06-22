@@ -6,7 +6,7 @@ body{
     padding: 0px;
     text-decoration: none;
     background-color: darkgreen;
-    
+
 }
 header{
     position: sticky;
@@ -36,10 +36,7 @@ h3{
     font-family: 'MuseoModerno';
 
 }
-.content{
-    display: flex;
-    justify-content: center;
-}
+
 .koszyk{
     border: none;
     color: white;
@@ -112,6 +109,7 @@ h3{
 .user{
     font-family: 'MuseoModerno';
     color: white;
+    margin-right: 10px;
 }
 .mb-1{
     margin-top: 30px;
