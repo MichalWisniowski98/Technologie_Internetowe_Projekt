@@ -88,10 +88,10 @@
 
         <!-- Dwa linki - "zapomniałem hasła" i "załóż konto" -->
         <p class="mb-1">
-          <a href="./pages/forgot_password.php">I forgot my password</a>
+          <a href="./pages/forgot_password.php">Zapomniałem hasła</a>
         </p>
         <p class="mb-0">
-          <a href=".//register.php" class="text-center">Register a new membership</a>
+          <a href=".//register.php" class="text-center">Stwórz nowe konto</a>
         </p>
       </div>
       <!-- /.login-card-body -->
