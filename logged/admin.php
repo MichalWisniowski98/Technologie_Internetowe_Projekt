@@ -21,6 +21,18 @@
   <div class="home-box">
   <header>
       <a class="logo" href="../index.php">FutureDesk</a>
+      <?php
+      //przyciski kategorii
+      echo '<form action="./index.php?-Krzesla" method="post">';
+          echo "<input type='submit' class = 'kategoria' name='chairs' value='Krzesła'>";
+        echo '</form>';
+        echo '<form action="./index.php?-Sluchawki" method="post">';
+          echo "<input type='submit' class = 'kategoria' name='headphones' value='Słuchawki'>";
+        echo '</form>';
+        echo '<form action="./index.php?-Biurka" method="post">';
+          echo "<input type='submit' class = 'kategoria' name='desks' value='Biurka'>";
+        echo '</form>';
+        ?>
       <!-- Przycisk koszyka -->
       <form action="../pages/cart.php" method="post">
         <input type='submit' class="koszyk" name='product' value='Koszyk'>       
@@ -40,16 +52,6 @@
       $_SESSION['error'] = 'Błąd łączenia z bazą danych!';
       exit();
     }
-
-    echo '<form action="./admin.php?-Krzesla" method="post">';
-      echo "<input type='submit' class = 'zarejestruj' name='chairs' value='Krzesła'>";
-    echo '</form>';
-    echo '<form action="./admin.php?-Sluchawki" method="post">';
-      echo "<input type='submit' class = 'zarejestruj' name='headphones' value='Słuchawki'>";
-    echo '</form>';
-    echo '<form action="./admin.php?-Biurka" method="post">';
-      echo "<input type='submit' class = 'zarejestruj' name='desks' value='Biurka'>";
-    echo '</form>';
 
     //zapytanie zwracające produkty
     if((strpos($_SERVER['REQUEST_URI'], "?-Krzesla")) || (strpos($_SERVER['REQUEST_URI'], ".php"))){
