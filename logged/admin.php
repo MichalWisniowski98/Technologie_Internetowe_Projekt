@@ -13,27 +13,23 @@
   <title>Gamer Shop | Home</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=MuseoModerno:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../main.css">
 </head>
 <body class="hold-transition register-page">
   <div class="home-box">
-    <div class="logo">
-      <!-- Interaktywny przycisk logo sklepu -->
-      <a href="./admin.php"><b>Gamer </b>Shop</a>
-    </div>
-    <?php
-        //Wyświetlanie nazwy użytkownika - tu by trzeba było dać jakiś div żeby było oddzielone od reszty strony
-        echo "Jesteś zalogowany jako ", $_SESSION['logged']['name'], " (Admin)";
-    ?>
-    <div class="card">
-        <!-- Przycisk Wyloguj -->
-        <a href="../scripts/logout.php" class="text-center">Wyloguj</a>
-    </div>
-    <!-- Przycisk koszyka -->
-    <form action="../pages/cart.php" method="post">
-      <input type='submit' name='product' value='Koszyk'>
-    </form>
+  <header>
+      <a class="logo" href="./index.php">FutureDesk</a>
+      <!-- Przycisk koszyka -->
+      <form action="../pages/cart.php" method="post">
+        <input type='submit' class="koszyk" name='product' value='Koszyk'>       
+      </form>
+      <div class = "user">Witaj : <?php echo $_SESSION['logged']['name']; 
+      if($_SESSION['logged']['permission']==1) echo " (Admin)"; ?></div>
+      
+      <a href="../scripts/logout.php"><button class = "zarejestruj">Wyloguj</button></a>
+    </header>
   </div>
 
   <?php
