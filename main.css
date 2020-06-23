@@ -147,9 +147,16 @@ h3{
     border-radius: 5%;
     max-width: 150px;
     justify-content: center;
+    border: none;
+}
+th{
+    padding: 2vh;
+    margin: 0px;
+}
+td{
+    padding: 1vw;
 }
 
-/* error */
 
 .card-header{
     margin: 10px;
