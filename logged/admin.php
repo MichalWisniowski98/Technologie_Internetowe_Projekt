@@ -51,17 +51,20 @@
 
     //pętla do wyświetlenia tego samego produktu 9x / dodawanie do koszyka - trzeba to wpakować w jakieś divy
     echo  '<form action="" method="post">';
-      $num=0;
-      for($ci=0; $ci<3; $ci++){
-        for($c=0; $c<3; $c++){
-          echo "<br>";
-          echo '<img id="img1" src="data:image/jpeg;base64,'.base64_encode( $image ).'"/>';
-          echo  " ", $num, " ", $id, " ", $name, " ", $price, " ";
-          echo "<input type='submit' name='product' value='$tab_name[0], $num'";
-          $num++;
-        }
-        echo "<br>";
-      }
+      $num=0; 
+        echo  '<form action="" class = "produkty" method="post">';
+          $num=0;
+          for($ci=0; $ci<4; $ci++){
+            for($c=0; $c<5; $c++){
+              echo "<br>";
+              echo '<img id="img1" src="data:image/jpeg;base64,'.base64_encode( $image ).'"/>';
+              ?><div class = "opis"><?php echo  " ", $name, " ", $price, " zł";?></div>
+              <?php
+              echo "<input type='submit' class = 'kup' name='product' value='KUP'";
+              $num++;
+              echo "<br>";
+            }
+          }
     echo "</form>";
 
     //zapisanie dodanego produktu w zmiennej sesyjnej
