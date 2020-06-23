@@ -94,7 +94,7 @@
         }
 
         //przycisk powrotu do porzedniej strony
-        echo '<form action="../" method="post">';
+        echo '<form action="../index.php" method="post">';
           echo "<input type='submit' class = 'zarejestruj2' name='Return' value='Powrót'>";
         echo '</form>';
 

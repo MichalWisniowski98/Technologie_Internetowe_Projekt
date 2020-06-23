@@ -17,8 +17,13 @@ body{
     margin-left: 15px;
     cursor: pointer;
     font-family: 'MuseoModerno';
-    
+    transition: 0.5;
 }
+.kategoria:hover{
+    background-color:green;
+    box-shadow: 0px 0px 10px rgba(0, 255, 56, 0.4);
+}
+
 header{
     position: sticky;
     height: 10vh;
@@ -72,8 +77,8 @@ h3{
     cursor: pointer;
     font-family: 'MuseoModerno';
     letter-spacing: 0.10em;
-
 }
+
 .zaloguj{
     border-radius: 50px;
     border: none;
@@ -85,6 +90,12 @@ h3{
 
     font-family: 'MuseoModerno';
 }
+.zaloguj:hover{
+
+        background-color:lightblue;
+        box-shadow: 0px 0px 10px rgba(0, 174, 255, 0.4);
+
+}
 .zarejestruj{
     border-radius: 50px;
     border: none;
@@ -94,6 +105,11 @@ h3{
     margin-left: 15px;
     cursor: pointer;
     font-family: 'MuseoModerno';
+}
+.zarejestruj:hover{
+
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.4);
+
 }
 #img1{
     width: 25%;
