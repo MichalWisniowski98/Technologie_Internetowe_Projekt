@@ -70,7 +70,7 @@
 
     //pętla do wyświetlenia tego samego produktu 9x / dodawanie do koszyka - trzeba to wpakować w jakieś divy
     echo  '<form action="" method="post">';
-<<<<<<< HEAD
+
       $num=0;
       for($ci=0; $ci<3; $ci++){
           echo "<br>";
@@ -78,7 +78,6 @@
           echo  " ", $num, " ", $id, " ", $name, " ", $price, " ";
           echo "<input type='submit' name='product' value='$tab_name[0], $num'";
           $num++;
-=======
     $num=0;
     for($ci=0; $ci<4; $ci++){
       for($c=0; $c<5; $c++){
@@ -89,7 +88,6 @@
         <?php
         echo "<input type='submit' class = 'kup' name='product' value='$name'";
         $num++;
->>>>>>> 94b561a51f818ae06966e6c2e45d78f3bb366f29
         echo "<br>";
       }
     

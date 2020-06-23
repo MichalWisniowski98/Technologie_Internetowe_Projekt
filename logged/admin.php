@@ -76,7 +76,7 @@
               echo '<img id="img1" src="data:image/jpeg;base64,'.base64_encode( $image ).'"/>';
               ?><div class = "opis"><?php echo  " ", $name, " ", $price, " zł";?></div>
               <?php
-              echo "<input type='submit' class = 'kup' name='product' value='$name - dodaj'";
+              echo "<input type='submit' class = 'kup' name='product' value='$name'";
               $num++;
               echo "<br>";
           }
