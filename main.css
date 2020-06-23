@@ -8,6 +8,17 @@ body{
     background-color: lightgray;
 
 }
+.kategoria{
+    border-radius: 50px;
+    border: none;
+    background-color: darkgreen;
+    padding: 5px 30px;
+    color: white;
+    margin-left: 15px;
+    cursor: pointer;
+    font-family: 'MuseoModerno';
+    
+}
 header{
     position: sticky;
     height: 10vh;
@@ -45,7 +56,8 @@ h3{
     border: none;
     color: white;
     background-color: #191919;
-    margin-right: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
     cursor: pointer;
     font-family: 'MuseoModerno';
     font-size: 16px;
@@ -147,9 +159,16 @@ h3{
     border-radius: 5%;
     max-width: 150px;
     justify-content: center;
+    border: none;
+}
+th{
+    padding: 2vh;
+    margin: 0px;
+}
+td{
+    padding: 1vw;
 }
 
-/* error */
 
 .card-header{
     margin: 10px;
