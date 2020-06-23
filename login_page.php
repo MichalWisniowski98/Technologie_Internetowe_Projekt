@@ -22,17 +22,7 @@
     </div>
 
     <?php
-    //do wyjebania?
-      /*if(isset($_GET['register'])){
-        echo<<<SUCCESS
-        <div class="cinfo-box bg success">
-          <div class="info-box-content">
-            <h3 class="card-title">Prawidłowo dodano użykownika</h3>
-          </div>
-        <div
-      SUCCESS;
-      }*/
-
+    
       //wyświetlanie błędów zwróconych ze skryptu login.php
       if(isset($_SESSION['error'])){
       echo<<<ERROR
@@ -49,7 +39,7 @@
       <div class="card-body login-card-body">
           <p class="login-box-msg">Zaloguj się by przejść do koszyka</p>
 
-        <!-- Formularz logowania - email i hasło - brakuje przycisku "zapamiętaj mnie" - sprawdzić czy da się to ogarnąć -->
+        <!-- Formularz logowania - email i hasło - brakuje przycisku "zapamiętaj mnie" -->
         <form action="./scripts/login.php" method="post">
           <div class="input-group mb-3">
             <input type="email" class="form-control" placeholder="Email" name="email">

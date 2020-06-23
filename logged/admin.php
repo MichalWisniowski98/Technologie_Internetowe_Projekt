@@ -20,14 +20,27 @@
 <body class="hold-transition register-page">
   <div class="home-box">
   <header>
-      <a class="logo" href="./index.php">FutureDesk</a>
+      <a class="logo" href="../index.php">FutureDesk</a>
+      <?php
+      //przyciski kategorii
+      echo '<form action="./admin.php?-Krzesla" method="post">';
+          echo "<input type='submit' class = 'kategoria' name='chairs' value='Krzesła'>";
+        echo '</form>';
+        echo '<form action="./admin.php?-Sluchawki" method="post">';
+          echo "<input type='submit' class = 'kategoria' name='headphones' value='Słuchawki'>";
+        echo '</form>';
+        echo '<form action="./admin.php?-Biurka" method="post">';
+          echo "<input type='submit' class = 'kategoria' name='desks' value='Biurka'>";
+        echo '</form>';
+        ?>
       <!-- Przycisk koszyka -->
       <form action="../pages/cart.php" method="post">
         <input type='submit' class="koszyk" name='product' value='Koszyk'>       
       </form>
+      <!-- Wyświetlenie usera -->
       <div class = "user">Witaj : <?php echo $_SESSION['logged']['name']; 
       if($_SESSION['logged']['permission']==1) echo " (Admin)"; ?></div>
-      
+      <!-- Przycisk wyloguj -->
       <a href="../scripts/logout.php"><button class = "zarejestruj">Wyloguj</button></a>
     </header>
   </div>
@@ -39,16 +52,6 @@
       $_SESSION['error'] = 'Błąd łączenia z bazą danych!';
       exit();
     }
-
-    echo '<form action="./admin.php?-Krzesla" method="post">';
-      echo "<input type='submit' class = 'zarejestruj' name='chairs' value='Krzesła'>";
-    echo '</form>';
-    echo '<form action="./admin.php?-Sluchawki" method="post">';
-      echo "<input type='submit' class = 'zarejestruj' name='headphones' value='Słuchawki'>";
-    echo '</form>';
-    echo '<form action="./admin.php?-Biurka" method="post">';
-      echo "<input type='submit' class = 'zarejestruj' name='desks' value='Biurka'>";
-    echo '</form>';
 
     //zapytanie zwracające produkty
     if((strpos($_SERVER['REQUEST_URI'], "?-Krzesla")) || (strpos($_SERVER['REQUEST_URI'], ".php"))){
@@ -67,7 +70,7 @@
       //header("Content-type: image/png");
       $tab_name = explode(" ", $name);
 
-    //pętla do wyświetlenia tego samego produktu 9x / dodawanie do koszyka - trzeba to wpakować w jakieś divy
+    //pętla do wyświetlenia tego samego produktu 9x / dodawanie do koszyka
     echo  '<form action="" method="post">';
         echo  '<form action="" class = "produkty" method="post">';
           $num=0;

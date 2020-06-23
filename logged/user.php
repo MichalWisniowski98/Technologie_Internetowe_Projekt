@@ -21,13 +21,26 @@
 <body class="hold-transition register-page">
   <div class="home-box">
     <header>
-      <a class="logo" href="./index.php">FutureDesk</a>
+      <a class="logo" href="../index.php">FutureDesk</a>
+      <?php
+      //przyciski kategorii
+      echo '<form action="./user.php?-Krzesla" method="post">';
+          echo "<input type='submit' class = 'kategoria' name='chairs' value='Krzesła'>";
+        echo '</form>';
+        echo '<form action="./user.php?-Sluchawki" method="post">';
+          echo "<input type='submit' class = 'kategoria' name='headphones' value='Słuchawki'>";
+        echo '</form>';
+        echo '<form action="./user.php?-Biurka" method="post">';
+          echo "<input type='submit' class = 'kategoria' name='desks' value='Biurka'>";
+        echo '</form>';
+        ?>
       <!-- Przycisk koszyka -->
       <form action="../pages/cart.php" method="post">
         <input type='submit' class="koszyk" name='product' value='Koszyk'>       
       </form>
+      <!-- Wyświetlenie usera -->
       <div class = "user">Witaj : <?php echo $_SESSION['logged']['name']; ?></div>
-      
+      <!-- Przycisk wyloguj -->
       <a href="../scripts/logout.php"><button class = "zarejestruj">Wyloguj</button></a>
     </header>
 
@@ -41,16 +54,6 @@
         exit();
     }
     
-    echo '<form action="./user.php?-Krzesla" method="post">';
-      echo "<input type='submit' class = 'zarejestruj' name='chairs' value='Krzesła'>";
-    echo '</form>';
-    echo '<form action="./user.php?-Sluchawki" method="post">';
-      echo "<input type='submit' class = 'zarejestruj' name='headphones' value='Słuchawki'>";
-    echo '</form>';
-    echo '<form action="./user.php?-Biurka" method="post">';
-      echo "<input type='submit' class = 'zarejestruj' name='desks' value='Biurka'>";
-    echo '</form>';
-
     //zapytanie zwracające produkty
     if((strpos($_SERVER['REQUEST_URI'], "?-Krzesla")) || (strpos($_SERVER['REQUEST_URI'], ".php"))){
       $sql = "SELECT  id, name, price, image FROM `produkty` WHERE id = '1'";
@@ -68,19 +71,11 @@
       //header("Content-type: image/png");
       $tab_name = explode(" ", $name);
 
-    //pętla do wyświetlenia tego samego produktu 9x / dodawanie do koszyka - trzeba to wpakować w jakieś divy
+    //pętla do wyświetlenia tego samego produktu 9x / dodawanie do koszyka
     echo  '<form action="" method="post">';
 
-      $num=0;
-      for($ci=0; $ci<3; $ci++){
-          echo "<br>";
-          echo '<img id="img1" src="data:image/jpeg;base64,'.base64_encode( $image ).'"/>';
-          echo  " ", $num, " ", $id, " ", $name, " ", $price, " ";
-          echo "<input type='submit' name='product' value='$tab_name[0], $num'";
-          $num++;
     $num=0;
     for($ci=0; $ci<4; $ci++){
-      for($c=0; $c<5; $c++){
         echo "<br>";
         echo '<img id="img1" src="data:image/jpeg/png;base64,'.base64_encode( $image ).'"/>';
         ?>
@@ -88,8 +83,8 @@
         <?php
         echo "<input type='submit' class = 'kup' name='product' value='$name'";
         $num++;
+
         echo "<br>";
-      }
     
     }
     echo "</form>";

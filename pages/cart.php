@@ -1,6 +1,6 @@
 <?php
   session_start();
-  //blokada przed wejściem na strone bez uprawnień - można wywalić
+  //blokada przed wejściem na strone bez uprawnień
   if(isset($_SESSION['logged']['email'])){
     //header('location: ./scripts/login.php');
   }
@@ -23,7 +23,7 @@
       <!-- Interaktywny przycisk logo sklepu -->
       <a class="logo" href="../index.php">FutureDesk</a>
     <?php
-        //Wyświetlanie nazwy użytkownika - tu by trzeba było dać jakiś div żeby było oddzielone od reszty strony
+        //Wyświetlanie nazwy użytkownika
         if(isset($_SESSION['logged']['email'])){?>
           <div class = "user">Witaj : <?php echo $_SESSION['logged']['name'];
           if($_SESSION['logged']['permission']==1) echo " (Admin)"; ?></div>

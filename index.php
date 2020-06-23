@@ -21,6 +21,7 @@
     <header>
       <a class="logo" href="./index.php">FutureDesk</a>
       <?php
+      //przyciski kategorii
       echo '<form action="./index.php?-Krzesla" method="post">';
           echo "<input type='submit' class = 'kategoria' name='chairs' value='Krzesła'>";
         echo '</form>';
@@ -46,9 +47,7 @@
           $_SESSION['error'] = 'Błąd łączenia z bazą danych!';
           exit();
         }
-
-
-
+        
         //zapytanie zwracające produkty
         if((strpos($_SERVER['REQUEST_URI'], "?-Krzesla")) || (strpos($_SERVER['REQUEST_URI'], ".php"))){
           $sql = "SELECT  id, name, price, image FROM `produkty` WHERE id = '1'";

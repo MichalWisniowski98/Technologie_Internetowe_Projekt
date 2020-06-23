@@ -53,7 +53,7 @@
         $stmt = $conn->prepare($sql);
         $stmt->bind_param('ssss', $name, $surname, $email1, $pass);
 
-        //jeżeli polecenie się wykonało - przejście do strony logowania - trzeba zmienić żeby wyświetlało komunikat o sukcesie
+        //jeżeli polecenie się wykonało - przejście do strony logowania
         if($stmt->execute()){
             $conn->close();
             $stmt->close();
