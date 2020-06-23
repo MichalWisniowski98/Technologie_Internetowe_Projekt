@@ -74,16 +74,6 @@
     //pętla do wyświetlenia tego samego produktu 9x / dodawanie do koszyka
     echo  '<form action="" method="post">';
 
-<<<<<<< HEAD
-=======
-      $num=0;
-      for($ci=0; $ci<3; $ci++){
-          echo "<br>";
-          echo '<img id="img1" src="data:image/jpeg;base64,'.base64_encode( $image ).'"/>';
-          echo  " ", $num, " ", $id, " ", $name, " ", $price, " ";
-          echo "<input type='submit' name='product' value='$tab_name[0], $num'";
-          $num++;
->>>>>>> 548a6de115c93238ae4858090d6c299f17a372e6
     $num=0;
     for($ci=0; $ci<4; $ci++){
         echo "<br>";
@@ -93,10 +83,7 @@
         <?php
         echo "<input type='submit' class = 'kup' name='product' value='$name'";
         $num++;
-<<<<<<< HEAD
 
-=======
->>>>>>> 548a6de115c93238ae4858090d6c299f17a372e6
         echo "<br>";
     
     }
