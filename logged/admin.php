@@ -23,13 +23,13 @@
       <a class="logo" href="../index.php">FutureDesk</a>
       <?php
       //przyciski kategorii
-      echo '<form action="./index.php?-Krzesla" method="post">';
+      echo '<form action="./admin.php?-Krzesla" method="post">';
           echo "<input type='submit' class = 'kategoria' name='chairs' value='Krzesła'>";
         echo '</form>';
-        echo '<form action="./index.php?-Sluchawki" method="post">';
+        echo '<form action="./admin.php?-Sluchawki" method="post">';
           echo "<input type='submit' class = 'kategoria' name='headphones' value='Słuchawki'>";
         echo '</form>';
-        echo '<form action="./index.php?-Biurka" method="post">';
+        echo '<form action="./admin.php?-Biurka" method="post">';
           echo "<input type='submit' class = 'kategoria' name='desks' value='Biurka'>";
         echo '</form>';
         ?>
