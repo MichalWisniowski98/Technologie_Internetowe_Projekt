@@ -22,13 +22,13 @@
       <a class="logo" href="./index.php">FutureDesk</a>
       <?php
       echo '<form action="./index.php?-Krzesla" method="post">';
-          echo "<input type='submit' class = 'zarejestruj' name='chairs' value='Krzesła'>";
+          echo "<input type='submit' class = 'kategoria' name='chairs' value='Krzesła'>";
         echo '</form>';
         echo '<form action="./index.php?-Sluchawki" method="post">';
-          echo "<input type='submit' class = 'zarejestruj' name='headphones' value='Słuchawki'>";
+          echo "<input type='submit' class = 'kategoria' name='headphones' value='Słuchawki'>";
         echo '</form>';
         echo '<form action="./index.php?-Biurka" method="post">';
-          echo "<input type='submit' class = 'zarejestruj' name='desks' value='Biurka'>";
+          echo "<input type='submit' class = 'kategoria' name='desks' value='Biurka'>";
         echo '</form>';
         ?>
       <form action="./pages/cart.php" method="post">
