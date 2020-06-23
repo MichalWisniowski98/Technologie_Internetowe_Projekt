@@ -5,7 +5,7 @@ body{
     margin: 0px;
     padding: 0px;
     text-decoration: none;
-    background-color: green;
+    background-color: lightgray;
 
 }
 header{
@@ -50,6 +50,7 @@ h3{
     font-family: 'MuseoModerno';
     font-size: 16px;
 }
+
 .logo{
     margin-right: auto;
     color: white;
@@ -87,8 +88,66 @@ h3{
     margin-left: 35%;
 }
 
-/* forgot_password */
+/* forma koszyka */
 
+.koszyk-all{
+    font-family: Helvetica;
+    color: white;
+    background-color: #191919;
+    margin: auto;
+    margin-top: 150px;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5%;
+    max-width: 500px;
+    justify-content: center;
+}
+
+.zaloguj2{
+    margin-top: 5px;
+    border-radius: 50px;
+    border: none;
+    background-color: blue;
+    padding: 3px 30px;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+    font-family: 'MuseoModerno';
+}
+
+.zarejestruj2{
+    margin-top: 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: red;
+    padding: 3px 30px;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+    font-family: 'MuseoModerno';
+}
+
+.user2{
+    margin: 20px;
+}
+
+/* tabela koszyk */
+
+.koszyk2{
+    font-family: Helvetica;
+    color: white;
+    background-color: #191919;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5%;
+    max-width: 150px;
+    justify-content: center;
+}
 
 /* error */
 
