@@ -3,7 +3,7 @@
     //sprawdzenie czy obecnie jest ktoś zalogowany - zamknięcie sesji
     if(isset($_SESSION['logged']['email'])){
         session_destroy();
-        header("location: ../");
+        header("location: ../index.php");
         exit();
     }
 

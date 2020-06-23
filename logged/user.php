@@ -41,17 +41,44 @@
         exit();
     }
     
+    echo '<form action="./user.php?-Krzesla" method="post">';
+      echo "<input type='submit' class = 'zarejestruj' name='chairs' value='Krzesła'>";
+    echo '</form>';
+    echo '<form action="./user.php?-Sluchawki" method="post">';
+      echo "<input type='submit' class = 'zarejestruj' name='headphones' value='Słuchawki'>";
+    echo '</form>';
+    echo '<form action="./user.php?-Biurka" method="post">';
+      echo "<input type='submit' class = 'zarejestruj' name='desks' value='Biurka'>";
+    echo '</form>';
+
     //zapytanie zwracające produkty
-    $sql = "SELECT  id, name, price, image FROM `produkty`";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_result($id, $name, $price, $image);
-    $stmt->execute();
-    $stmt->fetch();
-    //header("Content-type: image/png");
-    $tab_name = explode(" ", $name);
+    if((strpos($_SERVER['REQUEST_URI'], "?-Krzesla")) || (strpos($_SERVER['REQUEST_URI'], ".php"))){
+      $sql = "SELECT  id, name, price, image FROM `produkty` WHERE id = '1'";
+    }
+    if((strpos($_SERVER['REQUEST_URI'], "?-Sluchawki"))){
+      $sql = "SELECT  id, name, price, image FROM `produkty` WHERE id = '2'";
+    }
+    if((strpos($_SERVER['REQUEST_URI'], "?-Biurka"))){
+      $sql = "SELECT  id, name, price, image FROM `produkty` WHERE id = '3'";
+    }
+      $stmt = $conn->prepare($sql);
+      $stmt->bind_result($id, $name, $price, $image);
+      $stmt->execute();
+      $stmt->fetch();
+      //header("Content-type: image/png");
+      $tab_name = explode(" ", $name);
 
     //pętla do wyświetlenia tego samego produktu 9x / dodawanie do koszyka - trzeba to wpakować w jakieś divy
     echo  '<form action="" method="post">';
+<<<<<<< HEAD
+      $num=0;
+      for($ci=0; $ci<3; $ci++){
+          echo "<br>";
+          echo '<img id="img1" src="data:image/jpeg;base64,'.base64_encode( $image ).'"/>';
+          echo  " ", $num, " ", $id, " ", $name, " ", $price, " ";
+          echo "<input type='submit' name='product' value='$tab_name[0], $num'";
+          $num++;
+=======
     $num=0;
     for($ci=0; $ci<4; $ci++){
       for($c=0; $c<5; $c++){
@@ -62,6 +89,7 @@
         <?php
         echo "<input type='submit' class = 'kup' name='product' value='$name'";
         $num++;
+>>>>>>> 94b561a51f818ae06966e6c2e45d78f3bb366f29
         echo "<br>";
       }
     
