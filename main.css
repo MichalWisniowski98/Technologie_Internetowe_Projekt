@@ -45,7 +45,8 @@ h3{
     border: none;
     color: white;
     background-color: #191919;
-    margin-right: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
     cursor: pointer;
     font-family: 'MuseoModerno';
     font-size: 16px;
