@@ -76,7 +76,7 @@
               ?>
               <div class = "opis"><?php echo  " ", $name, " ", $price, " zł";?></div>
               <?php
-              echo "<input type='submit' class = 'kup' name='product' value='Dodaj do koszyka'";
+              echo "<input type='submit' class = 'kup' name='product' value='$name'";
               $num++;
               echo "<br>";
           }
