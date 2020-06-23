@@ -19,6 +19,7 @@
 </head>
 <body class="hold-transition register-page">
   <div class="home-box">
+    <div class="koszyk-all">
       <!-- Interaktywny przycisk logo sklepu -->
       <a class="logo" href="../index.php">FutureDesk</a>
     <?php
@@ -29,15 +30,15 @@
           <?php
           
         }
-        else echo "<div class = 'user'>Zaloguj się aby dokończyć zakupy</div>";
+        else echo "<div class = 'user2'>Zaloguj się aby dokończyć zakupy</div>";
     ?>
     <div class="card">
       <?php
         //Przycisk zaloguj
         if(isset($_SESSION['logged']['email'])){
-          echo '<a href="../scripts/logout.php" class="zarejestruj">Wyloguj</a>';
+          echo '<a href="../scripts/logout.php" class="zarejestruj2">Wyloguj</a>';
         }
-        else echo '<a href="../login_page.php" class="zaloguj">Zaloguj</a>';
+        else echo '<a href="../login_page.php" class="zaloguj2">Zaloguj</a>';
       ?>
       <?php
         //łączenie się z bazą i sprawdzenie czy działa
@@ -70,7 +71,7 @@
         function generate_cart(){
             echo "   
             <form action = '' class = 'card' method = 'post'>
-            <table class='koszyk' border='3px solid'>
+            <table class='koszyk2' border='3px solid'>
             <br><caption><br>Koszyk</caption>
             <th>Nr.</the><th>Produkt</th><th>Ilosc</th><th>Usuń</th>
             ";
@@ -94,7 +95,7 @@
 
         //przycisk powrotu do porzedniej strony
         echo '<form action="../" method="post">';
-          echo "<input type='submit' class = 'zarejestruj' name='Return' value='Powrót'>";
+          echo "<input type='submit' class = 'zarejestruj2' name='Return' value='Powrót'>";
         echo '</form>';
 
         //uruchomienie funkcji generowania talbicy koszyka i usuwania produktów
@@ -107,5 +108,6 @@
       ?>
     </div>
   </div>
+      </div>
 </body>
 </html>
