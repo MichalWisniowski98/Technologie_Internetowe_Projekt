@@ -63,6 +63,7 @@
     if((strpos($_SERVER['REQUEST_URI'], "?-Biurka"))){
       $sql = "SELECT  id, name, price, image FROM `produkty` WHERE id = '3'";
     }
+
       $stmt = $conn->prepare($sql);
       $stmt->bind_result($id, $name, $price, $image);
       $stmt->execute();
