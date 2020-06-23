@@ -36,7 +36,7 @@
         }
 
         //zapytanie zwracające produkty
-        $sql = "SELECT  id, name, price, image FROM `produkty`";
+        $sql = "SELECT  id, name, price, image FROM `produkty` WHERE id = '2'";
         $stmt = $conn->prepare($sql);
         $stmt->bind_result($id, $name, $price, $image);
         $stmt->execute();
@@ -52,10 +52,11 @@
           for($ci=0; $ci<4; $ci++){
             for($c=0; $c<5; $c++){
               echo "<br>";
-              echo '<img id="img1" src="data:image/jpeg;base64,'.base64_encode( $image ).'"/>';
-              ?><div class = "opis"><?php echo  " ", $name, " ", $price, " zł";?></div>
+              echo '<img id="img1" src="data:image/jpeg/png;base64,'.base64_encode( $image ).'"/>';
+              ?>
+              <div class = "opis"><?php echo  " ", $name, " ", $price, " zł";?></div>
               <?php
-              echo "<input type='submit' class = 'kup' name='product' value='KUP'";
+              echo "<input type='submit' class = 'kup' name='product' value='$name'";
               $num++;
               echo "<br>";
             }
