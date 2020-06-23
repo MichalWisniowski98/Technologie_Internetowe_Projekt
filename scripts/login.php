@@ -1,5 +1,3 @@
-<!-- nie działa wyświetlanie błędów -->
-
 <?php
     session_start();
 

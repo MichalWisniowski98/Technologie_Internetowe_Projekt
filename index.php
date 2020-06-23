@@ -34,7 +34,8 @@
           $_SESSION['error'] = 'Błąd łączenia z bazą danych!';
           exit();
         }
-
+        
+        //przyciski kategorii
         echo '<form action="./index.php?-Krzesla" method="post">';
           echo "<input type='submit' class = 'zarejestruj' name='chairs' value='Krzesła'>";
         echo '</form>';

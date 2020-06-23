@@ -20,14 +20,15 @@
 <body class="hold-transition register-page">
   <div class="home-box">
   <header>
-      <a class="logo" href="./index.php">FutureDesk</a>
+      <a class="logo" href="../index.php">FutureDesk</a>
       <!-- Przycisk koszyka -->
       <form action="../pages/cart.php" method="post">
         <input type='submit' class="koszyk" name='product' value='Koszyk'>       
       </form>
+      <!-- Wyświetlenie usera -->
       <div class = "user">Witaj : <?php echo $_SESSION['logged']['name']; 
       if($_SESSION['logged']['permission']==1) echo " (Admin)"; ?></div>
-      
+      <!-- Przycisk wyloguj -->
       <a href="../scripts/logout.php"><button class = "zarejestruj">Wyloguj</button></a>
     </header>
   </div>
@@ -67,7 +68,7 @@
       //header("Content-type: image/png");
       $tab_name = explode(" ", $name);
 
-    //pętla do wyświetlenia tego samego produktu 9x / dodawanie do koszyka - trzeba to wpakować w jakieś divy
+    //pętla do wyświetlenia tego samego produktu 9x / dodawanie do koszyka
     echo  '<form action="" method="post">';
         echo  '<form action="" class = "produkty" method="post">';
           $num=0;
