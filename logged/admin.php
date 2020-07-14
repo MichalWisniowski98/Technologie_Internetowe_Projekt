@@ -71,7 +71,7 @@
       //header("Content-type: image/png");
       $tab_name = explode(" ", $name);
 
-    //pętla do wyświetlenia tego samego produktu 9x / dodawanie do koszyka
+    //pętla do wyświetlenia tego samego produktu / dodawanie do koszyka
     echo  '<form action="" method="post">';
         echo  '<form action="" class = "produkty" method="post">';
           $num=0;

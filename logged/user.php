@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=MuseoModerno:wght@300&display=swap" rel="stylesheet">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -71,7 +71,7 @@
       //header("Content-type: image/png");
       $tab_name = explode(" ", $name);
 
-    //pętla do wyświetlenia tego samego produktu 9x / dodawanie do koszyka
+    //pętla do wyświetlenia tego samego produktu / dodawanie do koszyka
     echo  '<form action="" method="post">';
 
     $num=0;
