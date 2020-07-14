@@ -42,7 +42,6 @@
                         
                         </div>
                         <!-- /.col -->
-            
                 </form>
             </div>
         </div>

@@ -101,7 +101,6 @@
             <!-- /.col -->
           </div>
         </form>
-
         
         <!-- Link - "już mam konto" -->
         <div class="gotaccount">
